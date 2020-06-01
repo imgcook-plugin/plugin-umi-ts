@@ -22,7 +22,7 @@ const pluginHandler = async (options) => {
         file.panelValue = file.panelValue.replace(
           /^(.|\n)+(\s\((.|\n)+\)\;)(.|\n)+$/g,
           (match, p1, p2) => {
-            return `import React from 'react';\nimport styles from './style.response';\n\nexport default () => {\n\treturn${p2}\n};`;
+            return `import React from 'react';\nimport styles from './style.responsive';\n\nexport default () => {\n\treturn${p2}\n};`;
           }
         );
       }
