@@ -3,6 +3,9 @@
   "version": "0.0.2",
   "description": "plugin template",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "nyc --reporter=text mocha test/__test__.js"
   },
